@@ -7,7 +7,9 @@ import {
 } from "lucide-react";
 import "./styles.css";
 
-const API = "http://127.0.0.1:8000";
+
+const API = "https://landguard-ai-sr4a.vercel.app";
+
 const money = (n) => new Intl.NumberFormat("en-BD").format(n || 0);
 
 function App() {
@@ -132,7 +134,7 @@ function App() {
       <div className="sidebar-bottom">
         <div className="demo-badge"><span className="pulse"></span> {t("সিনথেটিক ডেমো পরিবেশ","Synthetic demo environment")}</div>
         <p>{t("সরকারি ভূমি ব্যবস্থার সঙ্গে সংযুক্ত নয়।","Not connected to government land systems.")}</p>
-        <a href="http://127.0.0.1:8000/docs" target="_blank" rel="noreferrer">{t("API ডকুমেন্টেশন","API documentation")} <ExternalLink size={13}/></a>
+       <a href="https://landguard-ai-sr4a.vercel.app/docs" target="_blank" rel="noreferrer">{t("API ডকুমেন্টেশন","API documentation")} <ExternalLink size={13}/></a>
       </div>
     </aside>
 
